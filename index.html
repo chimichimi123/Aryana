@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
+<head>
     <title>Aryana</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Dog Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Dogs</a></li>
+                <li><a href="#breeds">Dog Breeds</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Dogs</h2>
+            <p>Dogs are domesticated mammals originally bred from wolves but after being bred by humans for so long and for aesthetic reasons, many are unrecognizable from their preceding lineage and suffer from daily health issues, some of those notable dogs can be seen below</p>
+        </section>
+        
+        <section id="breeds">
+            <h2>Dog Breeds</h2>
+            <label for="breed-select">Select a breed:</label>
+            <select id="breed-select">
+                <option value="Dachsund">Dachsund</option>
+                <option value="Bulldog">Bulldog</option>
+                <option value="Pug">Pug</option>
+                <option value="Chihuahua">Chihuahua</option>
+            </select>
+            <div id="breed-info"></div>
+            <button id="show-image-btn">Click to show image</button>
+            <img id="dog-image" style="display: none;" src="#" alt="Dog Image">
+        </section>
+    </main>
+
     <script src="script.js"></script>
-    <h1>Hello World!</h1>
-  </body>
+</body>
 </html>
